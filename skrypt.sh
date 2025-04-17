@@ -16,3 +16,7 @@ if [[ $1 == "--help" || $1 == "-h" ]]; then
   echo "--logs (-l)    - tworzy pliki log"
   echo "--help (-h)    - wyświetla pomoc"
 fi
+if [[ $1 == "--init" ]]; then
+  git clone https://github.com/twoja_nazwa/Lab4-Git-Tools.git $PWD/repo
+  export PATH=$PATH:$PWD/repo
+fi
