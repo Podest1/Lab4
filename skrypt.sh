@@ -10,3 +10,9 @@ if [[ $1 == "--logs" || $1 == "-l" ]]; then
     date >> log$i.txt
   done
 fi
+if [[ $1 == "--help" || $1 == "-h" ]]; then
+  echo "Dostępne opcje:"
+  echo "--date (-d)    - wyświetla datę"
+  echo "--logs (-l)    - tworzy pliki log"
+  echo "--help (-h)    - wyświetla pomoc"
+fi
